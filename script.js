@@ -1,243 +1,181 @@
-// Data Types
-// Task 1
+// Task 1 : var Variable Practice
+var age = 22;
+console.log(age);
+age = 23;
+console.log(age);
+
+// Task 2 : let Variable Practice
 let name = "Govardhan";
 console.log(name);
+name = "Reddy";
+console.log(name);
 
-// Task 2
-console.log(typeof("JavaScript"));
+// Task 3 : const Variable Practice
+const birthyear = 2003;
+console.log(birthyear);
+// birthyear = 2002; // This will cause an error because const cannot be changed
 
-// Task 3
-let age = 22;
-console.log(typeof(age));
-
-// Task 4
-let isStudent = true;
-console.log(typeof isStudent);
-
-// Task 5
-var salary;
-console.log(salary);
-
-// Array Tasks
-// Task 6
-let fruits =["Apple","Banana","Orange","Grapes","Kiwi"];
-console.log(fruits);
-
-// Task 7
-console.log(fruits[0]);
-
-// Task 8
-console.log(fruits[2]);
-
-// Task 9
-console.log(fruits[fruits.length-1]);
-
-// Task 10
-let numbers = [10,20,30,40,50];
-console.log(numbers[1]); // second element
-console.log(numbers[3]); // Fourth element
-
-// Object Tasks
-// Task 11
-let person = {
-    name1 : "Govardhan",
-    age : 22,
-    city : "Kadapa"
-};
-console.log(person);
-
-// Task 12
-console.log(person.name1);
-
-// Task 13
-person.skills = ["HTML","CSS","JS"];
-console.log(person.skills[1]);
-
-// Task 14
-let carDetails = {
-    brand : "kia",
-    model : 2024,
-    price : 2000000
-};
-console.log(carDetails.brand);
-
-// Task 15
-let fruitCategory = {
-    red : ["apple","cherry"],
-    yellow : ["banana","mango"],
-    green : ["kiwi","grapes"]
-};
-console.log(fruitCategory.yellow[0]);
-
-// Arthimetic Operators
-// Task 16
-let a = 8;
-let b = 4;
-console.log(a + b);
-
-// Task 17
-console.log(a - b);
-
-// Task 18
-console.log(a * b);
-
-// Task 19
-console.log(a / b);
-
-// Task 20
-console.log(a % b);
- 
-// Exponential Operator
-// Task 21
-let a1 = 3;
-let b2 = 2;
-console.log(a1 ** b2);
-
-// Task 22
-let a2 = 2;
-let b3 = 4;
-console.log(a2 ** b3);
-
-// Increment/Decrement
-// Task 23
-let num = 5;
-num ++;
-console.log(num);
-
-// Task 24
-let num1 = 10;
-num1 --;
-console.log(num1);
-
-// Task 25
-let x = 6;
-let y = x++;
-console.log(x);
-console.log(y);
-
-// Task 26
-let a4 = 4;
-let b4 = ++ a4;
-console.log(a4);
-console.log(b4);
-
-// Assinment Operators
-// Task 27
-let value = 10;
-value += 5;
+// Task 4 : var Re-declaration
+var value = 10;
+console.log(value);
+var value = 20;
 console.log(value);
 
-// Task 28
-let value1 = 20;
-value1 -= 3;
-console.log(value1);
+// Task 5 : let Re-declaration
+let message = "Hello";
+console.log(message);
+// let message = "Hi"; // This will get SynatxError as the let cannot be redeclared
 
-// Task 29
-let value3 = 6;
-value3 *= 2;
+// Task 6 : console.log() Practice
+console.log("Govardhan");
+console.log(22);
+console.log("Kadapa");
+console.log(100);
+console.log("JavaScript is fun");
+
+// Task 7 : alert() Practice
+alert("Welcome to JavaScript");
+
+// Task 8 : confirm() Practice
+let message2 =confirm("Do you like coding ?");
+console.log(message2);
+
+// Task 9 : prompt() Practice
+let userName = prompt("What is your name ?");
+console.log(userName);
+
+// Task 10 : consle.warn() Practice
+console.warn("This is a warning");
+
+// Task 11 : console.error() Practice
+console.error("This is an error");
+
+// Task 12 : console.clear() Practice
+console.log("This will be cleared");
+console.clear();
+
+// Task 13 : document.writeln() pactice
+document.writeln("Hello! This text is written on the webpage.");
+
+// Task 14 : userName Colletion
+let user = prompt("Enter your Name");
+alert("Hello" + user);
+console.log(user);
+
+// Task 15 : Age Collection
+let userAge = prompt("Enter your Age");
+console.log(userAge);
+document.writeln("Your age is : " + userAge);
+
+// Task 16 : Breakfast Cofirmaton
+const Breakfast = confirm("Have you had your breakfast");
+console.log(Breakfast);
+
+// Task 17 : Simple variable Creation
+var city = "Mumbai";
+let country = "India";
+const planet = "Earth";
+console.log(city);
+console.log(country);
+console.log(planet);
+
+// Task 18 : Variable Re-use Practice
+let value3 = 5;
+console.log(value3);
+value3 = 10;
+console.log(value3);
+value3 = 15;
 console.log(value3);
 
-// Task 30
-let value4 = 20;
-value4 %= 3;
-console.log(value4);
-
-// Comparison Operators
-// Task 31
-10 == "10"
-console.log(10 == "10");
-
-// Task 32
-10 ==="10"
-console.log(10 ==="10");
-
-// Task 33
-15 > 20
-console.log(15 > 20);
-
-// Task 34
-5 <= 5
-console.log(5 <= 5);
-
-// Logical Operators
-// Task 35
-10>5&&5>2
-console.log(10>5&&5>2);
-// Task 36
-10<5||8>2
-console.log(10<5||8>2);
-
-// Task 37
-!(5 === "5")
-console.log(!(5 === "5"));
-
-//Ternary Operator
-// Task 38
-let age1 = 20;
-console.log(age1 >= 18 ? "Adult" : "Minor");
-
-// Task 39
-let password = 1;
-console.log(password = 1  ? "Login Success" : "Wrong Password");
-
-// String Operations
-let firstName = "Spider";
-let lastName = "Man";
-console.log(firstName + " " + lastName);
-console.log(`${firstName} ${lastName}`);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Task 19 : Multiple console methods
+console.log("This is a normal message");
+console.warn("This is a warning");
+console.error("This is an Error");
+
+// Task 20 : User Deatils Collection
+const username = prompt("Enter Your Name");
+let userage = prompt("Enter your Age");
+var question = confirm("Are You a Student ?");
+console.log(username);
+console.log(userage);
+console.log(question);
+alert("Welcome");
+
+// Task 21 : Simple Welcome Program
+console.clear();
+alert("Hello!");
+let NAME = prompt("Enter Your Name");
+alert("Welcome" + NAME);
+document.writeln(NAME);
+
+// Task 22 : Variable Inside Bolck
+{
+    var a = 100;
+    let b = 200;
+    const c = 300;
+}
+    console.log(a);
+    //console.log(b); // Reference Error : b is not defined
+    //console.log(c); // Reference Error : c is not defined
+
+    // Task 23 : Simple Number Storage
+    var num1 = 10;
+    let num2 = 20;
+    const num3 = 30;
+    console.log(num1);
+    console.log(num2);
+    console.log(num3);
+
+    // Task 24 : User Response Logger
+    let que = confirm("Do you like JavaScript ?");
+    console.log(que);
+    console.warn(que);
+    console.error(que);
+
+    // Task 25 : Name Display on Webpage
+    let USERNAME = prompt("Enter your name");
+    document.writeln("Your name is : " + USERNAME);
+    console.log(USERNAME);
+
+    // Task 26 : Age Displays with all the Methods
+    let USERAGE = prompt("Enter your age");
+    alert(USERAGE);
+    console.log(USERAGE);
+    document.writeln(USERAGE);
+
+    // Task 27 : var vs let Comparison
+    {
+        var d = 10;
+        let e = 20;
+    }
+    console.log(d); //works
+    // console.log(e); // error
+
+    // Task 28 : Simple confirmation
+    let ageCheck = confirm("Are you 18+ ?");
+    if (ageCheck) {
+        console.log("Adult");
+
+    }else{
+        console.warn("Minor");
+    }
+
+    // Task 29 : Variable Re-initialization
+    var x = "Apple";
+    x = "Banana";
+    let y = "car";
+    y = "Bike";
+    console.log(x);
+    console.log(y);
+
+    //Task 30 : Complete Basic Practice
+    console.clear();
+    alert("Practice Start");
+    const name1 = prompt("Enter your name");
+    let AGE1 = prompt("Enter your age");
+    var concern = confirm("Are you happy ?");
+    console.log(name1);
+    console.log(AGE1);
+    console.log(concern);
+    alert("Practice End");
+    document.writeln("Thank You");
